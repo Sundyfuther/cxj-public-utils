@@ -1,6 +1,6 @@
 import wechatShareApi from './wechatShareApi/index';
 
 
-export default {
+export {
     wechatShareApi,
 };
