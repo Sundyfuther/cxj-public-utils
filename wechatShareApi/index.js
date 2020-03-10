@@ -1,4 +1,4 @@
-import registerWechat from '@/services/wechat';
+import WeChat from 'orcrist-wechat';
 
 const w = window;
 const d = document;
@@ -37,12 +37,12 @@ const toggleMaskHandler = (maskShow=false) => {
 const wxShare = ({
   title='',
   desc='',
-  link='',
+  link=w.location.href,
   imgUrl='https://m.ytbxjj.com/spcare-public/static-files/hz/share.png',
-  hideOptMenu=false,
+  hideMenu=false,
 }) => {
-  registerWechat &&
-    registerWechat({
+  WeChat &&
+  WeChat.register({
       // 分享参数
       shareOpt: {
         title: title,
@@ -50,7 +50,7 @@ const wxShare = ({
         link: link, // 分享链接
         imgUrl: imgUrl //ICON_SHARE_WECHAT, // 分享图标
       },
-      hideOptMenu: hideOptMenu,
+      hideMenu: hideMenu,
     });
 }
 

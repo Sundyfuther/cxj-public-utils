@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Sundyfuther/cxj-public-utils/issues"
   },
-  "homepage": "https://github.com/Sundyfuther/cxj-public-utils#readme"
+  "homepage": "https://github.com/Sundyfuther/cxj-public-utils#readme",
+  "dependencies": {
+    "orcrist-wechat": "^1.0.2"
+  }
 }
